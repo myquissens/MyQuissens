@@ -1,35 +1,47 @@
-# MyQuissens — GitHub Pages
+# MyQuissens
 
-Gotowa statyczna wersja strony MyQuissens.
+MyQuissens is a free communication platform inspired by Discord. It is designed to provide a fast, simple, modern, and user-friendly place for people to communicate and build communities.
 
-## Publikacja pod `myquissens.github.io`
+## Features
 
-1. Zaloguj się na GitHub.
-2. Utwórz konto/organizację o nazwie `myquissens` (jeżeli jeszcze nie istnieje).
-3. Utwórz publiczne repozytorium o nazwie:
-   `myquissens.github.io`
-4. Wgraj do repozytorium:
-   - `index.html`
-   - `style.css`
-   - `app.js`
-5. W ustawieniach repozytorium wejdź w **Pages**.
-6. Jako źródło wybierz **Deploy from a branch**.
-7. Wybierz `main` i folder `/ (root)`.
-8. Po chwili strona będzie dostępna pod:
-   `https://myquissens.github.io/`
+- Real-time messaging
+- Custom text channels
+- User profiles
+- Online and offline status
+- Notifications
+- Communities and servers
+- Moderation tools
+- File sharing
+- Modern dark interface
+- Responsive design
+- Voice chat planned
+- More features coming soon
 
-## Co działa bez backendu
+## Website
 
-- interfejs komunikatora
-- kanały
-- tworzenie kanałów w przeglądarce
-- wysyłanie wiadomości
-- zmiana nazwy użytkownika
-- zapisywanie danych lokalnie w przeglądarce
-- responsywny wygląd
+The official website is available at:
 
-## Ważne
+https://myquissens.github.io/
 
-GitHub Pages jest hostingiem statycznym. Wiadomości nie są tutaj synchronizowane między różnymi użytkownikami.
+## GitHub Pages
 
-Aby MyQuissens stał się prawdziwym komunikatorem online, należy później podłączyć darmowy backend, np. ASP.NET Core + SignalR, bazę danych i system kont.
+This project can be hosted using GitHub Pages.
+
+To enable GitHub Pages:
+
+1. Open the repository **Settings**.
+2. Go to **Pages**.
+3. Select **Deploy from a branch**.
+4. Select the `main` branch.
+5. Select `/ (root)`.
+6. Click **Save**.
+
+## Project Structure
+
+```text
+MyQuissens/
+├── index.html
+├── style.css
+├── app.js
+├── README.md
+└── .gitignore
