@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>MyQuissens — komunikator</title>
+  <meta name="description" content="MyQuissens — własny komunikator internetowy.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app">
+    <aside class="servers">
+      <div class="logo">MQ</div>
+      <button class="server active">M</button>
+      <button class="server">+</button>
+    </aside>
+
+    <aside class="sidebar">
+      <header class="sidebar-header">
+        <strong>MyQuissens</strong>
+        <button id="settingsBtn" title="Ustawienia">⚙</button>
+      </header>
+
+      <div class="sidebar-title">
+        <span>KANAŁY</span>
+        <button id="addChannel">＋</button>
+      </div>
+
+      <nav id="channels">
+        <button class="channel active" data-channel="ogólny"># <span>ogólny</span></button>
+        <button class="channel" data-channel="pomoc"># <span>pomoc</span></button>
+        <button class="channel" data-channel="ogłoszenia"># <span>ogłoszenia</span></button>
+      </nav>
+
+      <div class="account">
+        <div class="avatar" id="accountAvatar">G</div>
+        <div class="account-info">
+          <b id="accountName">Gość</b>
+          <span>● online</span>
+        </div>
+        <button id="changeName" title="Zmień nazwę">✎</button>
+      </div>
+    </aside>
+
+    <main class="chat">
+      <header class="chat-header">
+        <div>
+          <div class="channel-name"><span>#</span><strong id="channelName">ogólny</strong></div>
+          <div class="channel-topic">Witaj w MyQuissens!</div>
+        </div>
+        <div class="header-actions">
+          <button title="Powiadomienia">🔔</button>
+          <button title="Przypięte">📌</button>
+          <button title="Pomoc">?</button>
+        </div>
+      </header>
+
+      <section class="messages" id="messages">
+        <div class="welcome">
+          <div class="welcome-icon">MQ</div>
+          <h1>Witaj na MyQuissens!</h1>
+          <p>To początek kanału <b>#ogólny</b>. Napisz pierwszą wiadomość.</p>
+        </div>
+      </section>
+
+      <form class="composer" id="composer">
+        <button type="button" id="attachBtn" title="Załącznik">＋</button>
+        <input id="messageInput" autocomplete="off" maxlength="2000"
+               placeholder="Napisz wiadomość na #ogólny...">
+        <button type="button" title="Emoji">☺</button>
+        <button class="send" type="submit">Wyślij</button>
+      </form>
+    </main>
+
+    <aside class="members">
+      <h3>UŻYTKOWNICY — <span id="memberCount">1</span></h3>
+      <div class="member">
+        <div class="avatar small">G</div>
+        <div>
+          <b id="memberName">Gość</b>
+          <span>online</span>
+        </div>
+      </div>
+    </aside>
+  </div>
+
+  <div class="modal hidden" id="modal">
+    <div class="modal-card">
+      <button class="close" id="closeModal">×</button>
+      <h2>Ustawienia profilu</h2>
+      <label>Nazwa użytkownika</label>
+      <input id="nameInput" maxlength="32" value="Gość">
+      <button class="primary" id="saveName">Zapisz</button>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
